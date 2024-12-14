@@ -13,7 +13,6 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 
-
 const val MODEL_PACKAGE = "ru.netology.testing.uiautomator"
 
 const val TIMEOUT = 5000L
@@ -65,7 +64,7 @@ class ChangeTextTest {
         device.findObject(By.res(packageName, "buttonChange")).click()
 
         val result = device.findObject(By.res(packageName, "textToBeChanged")).text
-        assertEquals(result,   "Hello UiAutomator!")
+        assertEquals(result, "Hello UiAutomator!")
     }
 
     @Test
